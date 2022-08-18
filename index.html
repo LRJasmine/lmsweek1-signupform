@@ -5,18 +5,85 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>LMS Signup form project</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="app.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div>
-    <nav>
-      <div></div>
-    </nav>
-    <main></main>
-    <footer></footer>
-  </div>
-  <script src="script.js"></script>
+  <nav>
+    <div id="companylogo">
+      <img src="images/cupcakelogo.jpg" alt="cupcakelogo" id="cupcakelogo" />
+      <p>The Pastery Factory</p>
+    </div>
+  </nav>
+  <main id="main">
+    <div id="successmsg">
+      <p>Sign up was successful</p>
+    </div>
+    <div id="formcontainer">
+      <div id="signupintro">
+        <p>Get all your pastry needs taken care of right at your finger tips. Browse the menu, make appointements, plan
+          your next event, schedule deliveries and pickups and so much much.</p>
+        <p>What are you waiting for?</p>
+        <p> Sign up with The Pastery Factory today!</p>
+      </div>
+      <form id="signupform" method="post">
+        <div id="fieldscontainer">
+          <div class="formfield">
+            <label for="firstname">
+              First Name
+            </label>
+            <input type="text" id="firstname" name="firstname" required />
+          </div>
+          <div class="formfield">
+            <label for="lastname">
+              Last Name
+            </label>
+            <input type="text" id="lastname" name="lastname" required />
+          </div>
+          <div class="formfield">
+            <label for="email">
+              Email
+            </label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="formfield">
+            <label for="phonenum">
+              Phone Number
+            </label>
+            <input type="tel" id="phonenum" name="phonenum" required />
+          </div>
+          <div class="formfield">
+            <label for="password">
+              Password
+            </label>
+            <input type="password" id="password" name="password" required />
+            <p class="passwordNotMatch">* Passwords do not match</p>
+          </div>
+          <div class="formfield">
+            <label for="confirmpassword">
+              Confirm Password
+            </label>
+            <input type="password" id="confirmpassword" name="confirmpassword" required />
+            <p class="passwordNotMatch">* Passwords do not match</p>
+          </div>
+        </div>
+        <div id="buttoncontainer">
+          <button type="submit" form="signupform" id="createaccount">Create Account</button>
+        </div>
+      </form>
+      <div id="existinglogin">
+        <p>
+          Already have an account?
+          <a href="/">Log in</a>
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <a href='https://www.freepik.com/vectors/cupcake-background'>Background image created by macrovector -
+      www.freepik.com</a>
+  </footer>
+  <script src="app.js"></script>
 
   <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
